@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Alura-Curso</name>
+    </assembly>
+    <members>
+        <member name="M:Alura_Curso.Controllers.FilmeController.Adicionar(Alura_Curso.Data.Dtos.CreateFilmeDto)">
+            <summary>
+            Adiciona um filme ao banco de dados
+            </summary>
+            <param name="filmedto">Objeto com os campos necessários para criação de um filme</param>
+            <returns>IActionResult</returns>
+            <response code="201">Caso inserção seja feita com sucesso</response>
+        </member>
+        <member name="M:Alura_Curso.Controllers.FilmeController.ListarFilme(System.Int32,System.Int32)">
+            <summary>
+            Lista Todos Os Filmes do Banco
+            </summary>
+             <param>Digite um valor de para pular ou deixe vazio</param>
+            <returns>IActionResult</returns>
+            <response code="200">Caso a busca seja feita com sucesso</response>
+        </member>
+        <member name="M:Alura_Curso.Controllers.FilmeController.BuscaFilmeID(System.Int32)">
+            <summary>
+            Lista um  filmes especifico do banco
+            </summary>
+            <param name="id">Objeto  necessário para a busca de um filme</param>
+            <returns>IActionResult</returns>
+            <response code="200">Caso a busca seja feita com sucesso</response>
+        </member>
+        <member name="M:Alura_Curso.Controllers.FilmeController.EditFilme(System.Int32,Alura_Curso.Data.Dtos.UpdateFilmeDto)">
+            <summary>
+            Edição de um  filme especifico do banco
+            </summary>
+            <param name="id">Objeto  necessário para a busca de um filme</param>
+            <returns>IActionResult</returns>
+            <response code="200">Caso a busca seja feita com sucesso</response>
+        </member>
+        <member name="M:Alura_Curso.Controllers.FilmeController.AttFilme(System.Int32,Microsoft.AspNetCore.JsonPatch.JsonPatchDocument{Alura_Curso.Data.Dtos.UpdateFilmeDto})">
+            <summary>
+            Edição de um  filme especifico do banco
+            </summary>
+            <param name="id">Objeto  necessário para a busca de um filme</param>
+            <returns>IActionResult</returns>
+            <response code="200">Caso a busca seja feita com sucesso</response>
+        </member>
+        <member name="M:Alura_Curso.Controllers.FilmeController.DeleteFilme(System.Int32)">
+            <summary>
+            Deletar um  filme especifico do banco
+            </summary>
+            <param name="id">Objeto  necessário para a exclusçao de um filme</param>
+            <returns>IActionResult</returns>
+            <response code="200">Caso a busca seja feita com sucesso</response>
+        </member>
+        <member name="T:Alura_Curso.Migrations.TabelaFilme">
+            <inheritdoc />
+        </member>
+        <member name="M:Alura_Curso.Migrations.TabelaFilme.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Alura_Curso.Migrations.TabelaFilme.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Alura_Curso.Migrations.TabelaFilme.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>

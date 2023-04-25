@@ -25,6 +25,14 @@ namespace Alura_Curso.Controllers
            
         }
 
+        /// <summary>
+        /// Adiciona um filme ao banco de dados
+        /// </summary>
+        /// <param name="filmedto">Objeto com os campos necessários para criação de um filme</param>
+        /// <returns>IActionResult</returns>
+        /// <response code="201">Caso inserção seja feita com sucesso</response>
+
+
         [HttpPost]
         public IActionResult Adicionar ([FromBody]CreateFilmeDto filmedto)
         {
@@ -35,6 +43,16 @@ namespace Alura_Curso.Controllers
         }
 
 
+
+        /// <summary>
+        /// Lista Todos Os Filmes do Banco
+        /// </summary>
+        ///  <param>Digite um valor de para pular ou deixe vazio</param>
+        /// <returns>IActionResult</returns>
+        /// <response code="200">Caso a busca seja feita com sucesso</response>
+
+
+
         [HttpGet]
 
         public IEnumerable<Filmes> ListarFilme([FromQuery]int skip = 0, [FromQuery] int take = 10)
@@ -43,7 +61,16 @@ namespace Alura_Curso.Controllers
             //pula 50 primeiros  e pega os 10 proximos 
             return _context.Filme.Skip(skip).Take(take);
         }
-            // busca filme pelo id 
+        // busca filme pelo id 
+
+        /// <summary>
+        /// Lista um  filmes especifico do banco
+        /// </summary>
+        /// <param name="id">Objeto  necessário para a busca de um filme</param>
+        /// <returns>IActionResult</returns>
+        /// <response code="200">Caso a busca seja feita com sucesso</response>
+
+
         [HttpGet("{id}")]
         public IActionResult BuscaFilmeID (int id)
         {
@@ -53,6 +80,14 @@ namespace Alura_Curso.Controllers
             return Ok(filme);
         }
 
+
+
+        /// <summary>
+        /// Edição de um  filme especifico do banco
+        /// </summary>
+        /// <param name="id">Objeto  necessário para a busca de um filme</param>
+        /// <returns>IActionResult</returns>
+        /// <response code="200">Caso a busca seja feita com sucesso</response>
 
 
         [HttpPut ("{id}")]
@@ -67,6 +102,15 @@ namespace Alura_Curso.Controllers
 
 
         }
+
+        /// <summary>
+        /// Edição de um  filme especifico do banco
+        /// </summary>
+        /// <param name="id">Objeto  necessário para a busca de um filme</param>
+        /// <returns>IActionResult</returns>
+        /// <response code="200">Caso a busca seja feita com sucesso</response>
+
+
 
         [HttpPatch("{id}")]
 
@@ -88,6 +132,14 @@ namespace Alura_Curso.Controllers
 
         }
 
+
+
+        /// <summary>
+        /// Deletar um  filme especifico do banco
+        /// </summary>
+        /// <param name="id">Objeto  necessário para a exclusçao de um filme</param>
+        /// <returns>IActionResult</returns>
+        /// <response code="200">Caso a busca seja feita com sucesso</response>
 
 
 

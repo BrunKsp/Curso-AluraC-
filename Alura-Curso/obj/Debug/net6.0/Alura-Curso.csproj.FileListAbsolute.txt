@@ -58,3 +58,5 @@ C:\Users\bbrun\Documents\CursoAlura\Alura-Curso\bin\Debug\net6.0\Microsoft.AspNe
 C:\Users\bbrun\Documents\CursoAlura\Alura-Curso\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 C:\Users\bbrun\Documents\CursoAlura\Alura-Curso\bin\Debug\net6.0\Newtonsoft.Json.dll
 C:\Users\bbrun\Documents\CursoAlura\Alura-Curso\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
+C:\Users\bbrun\Documents\CursoAlura\Alura-Curso\bin\Debug\net6.0\Alura-Curso.xml
+C:\Users\bbrun\Documents\CursoAlura\Alura-Curso\obj\Debug\net6.0\Alura-Curso.xml
